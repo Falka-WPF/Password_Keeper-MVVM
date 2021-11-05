@@ -2,11 +2,12 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style  x:Key="BaseStyle1">
         <Setter Property="ItemsControl.FontSize" Value="17"/>
-        <Setter Property="ItemsControl.Margin" Value="5"/>
+        <Setter Property="ItemsControl.Margin" Value="3"/>
         <Setter Property="ItemsControl.Padding" Value="5 2 5 0"/>
     </Style>
     <Style TargetType="Button" BasedOn="{StaticResource BaseStyle1}"/>
     <Style TargetType="Label" BasedOn="{StaticResource BaseStyle1}"/>
     <Style TargetType="TextBox" BasedOn="{StaticResource BaseStyle1}"/>
+    <Style TargetType="ComboBox" BasedOn="{StaticResource BaseStyle1}"/>
 
 </ResourceDictionary>

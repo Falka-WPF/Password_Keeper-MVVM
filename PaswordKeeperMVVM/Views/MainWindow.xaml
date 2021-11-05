@@ -41,7 +41,10 @@
                     <TextBox Text="{Binding CurrentNote.site_url}"/>
                     <Button Content="Add" Command="{Binding AddMyNote}"/>
                     <Button Content="Update" Command="{Binding UpdateNote}"/>
-                    <Button Content="Delete"/>
+                    <Button Content="Delete" Command="{Binding DelNote}"/>
+                    <Label Content="Category filter:"/>
+                    <ComboBox ItemsSource="{Binding Categories_VM}" SelectedItem="{Binding CurrentCategory}" DisplayMemberPath="Name" />
+                    <Button Content="Filter" Command="{Binding FilterNotes}"/>
                     </StackPanel>
             </Grid>
         </DockPanel>

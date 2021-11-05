@@ -16,6 +16,10 @@ namespace PaswordKeeperMVVM.ViewModel
         {
             this._category = category;
         }
+        public Category getCategory()
+        {
+            return this._category;
+        }
         public int Id
         {
             get { return _category.Id; }
